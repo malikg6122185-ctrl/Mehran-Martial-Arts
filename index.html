@@ -53,9 +53,19 @@
         }
 
         .product-card img {
-            width: 100%;
-            max-width: 180px;
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    border-radius: 6px;
         }
+        .product-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
 
         .contact {
             background-color: #111;
@@ -96,6 +106,7 @@
     <img src="logo.png" alt="Mehran Martial Arts Logo">
     <h1>Mehran Martial Arts Manufacturer</h1>
     <p>Official Website – Pakistan</p>
+    <p><strong>Manufacturer & Exporter of Martial Arts Belts</strong></p>
 </header>
 
 <section>
@@ -121,6 +132,9 @@
             <img src="belt2.png" alt="Club Belts">
             <h3>Club Belts</h3>
             <p>Perfect for academies and clubs.</p>
+        <a href="https://wa.me/923496676755" class="order-btn">
+    Order on WhatsApp
+</a>
         </div>
 
         <div class="product-card">
@@ -128,7 +142,11 @@
             <h3>Custom Belts</h3>
             <p>Custom colors, sizes & embroidery.</p>
         </div>
+    <a href="https://wa.me/923496676755" class="order-btn">
+    Order on WhatsApp
+</a>
     </div>
+    
 </section>
 
 <section class="contact">
@@ -145,6 +163,16 @@
 <a class="whatsapp" href="https://wa.me/923496676755" target="_blank">
     WhatsApp
 </a>
-
+.order-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #25d366;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+    
 </body>
 </html>
